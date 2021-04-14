@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body style="text-align:center">
+    <h5> F1 Drivers in 2019</h5>
+<!-- 
+<div *ngFor="let driver of drivers"> 
+    
+        <h3>{{ driver.givenName }}</h3>
+ </div>  -->
+ 
+    <table class="table table-hover" >
+        <thead>
+          <tr>
+            <th scope="col">Code</th>
+            <th scope="col">familyName</th>
+            <th scope="col">givenName</th>
+            <th scope="col">nationality</th>
+            <th scope="col">dateOfBirth</th>
+            <th scope="col">permanentNumber</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let driver of drivers">
+            <th scope="col">{{driver.code}}</th>
+            <th scope="col">{{driver.familyName}}</th>
+            <th scope="col">{{driver.givenName}}</th>
+            <th scope="col">{{driver.nationality}}</th>
+            <th scope="col">{{driver.dateOfBirth}}</th>
+            <th scope="col">{{driver.permanentNumber}}</th>
+          </tr>
+        </tbody>
+      </table> 
+</body>
+</html>
